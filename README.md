@@ -25,8 +25,10 @@ The invite (`https://discord.gg/MmGKBA5bE6`) is on every element with class `dis
 
 Every push to `main` redeploys automatically, and pushes to other branches get their own preview URLs.
 
-### Custom domain (optional)
-In the Pages project: **Custom domains → Set up a custom domain**. If the domain's DNS is already on Cloudflare, it's a single click; otherwise Cloudflare shows the CNAME record to add at your registrar.
+### Custom domain: panthergroup.community
+In the Pages project: **Custom domains → Set up a custom domain**, enter `panthergroup.community` (and optionally `www.panthergroup.community`). If the domain's DNS is already on Cloudflare, it's a single click; otherwise Cloudflare shows the CNAME record to add at your registrar.
+
+The domain is hard-coded in `index.html` (`og:url`, `og:image`, `canonical`), `robots.txt` and `sitemap.xml`. Update those if the domain ever changes.
 
 ## Adding a detachment
 Copy one `<article class="unit">` block in `index.html`, drop the patch image in `assets/`, and update the text. Add `unit--flip` to the class to put the patch on the right.
